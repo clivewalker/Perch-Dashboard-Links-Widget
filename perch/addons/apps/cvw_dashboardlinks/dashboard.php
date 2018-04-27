@@ -10,18 +10,19 @@
 
 	 ?>
 <div class="widget">
-	<h2>
-    <?php echo $Lang->get('Dashboard Links'); ?>
-	</h2>
-
-	<div class="body">
-		<ul>
-			<li>
-			<a href="<?php echo $Settings->get('cvw_dashboardlinks_url1')->settingValue(); ?>">
-			<?php echo $Settings->get('cvw_dashboardlinks_linktext1')->settingValue(); ?></a></li>
-			<li>
-			<a href="<?php echo $Settings->get('cvw_dashboardlinks_url2')->settingValue(); ?>">
-			<?php echo $Settings->get('cvw_dashboardlinks_linktext2')->settingValue(); ?></a></li>
-		</ul>
+<div class="dash-content">
+	<header>
+		<h2><?php echo $Lang->get('Dashboard Links'); ?></h2>
+	</header>
+		<div class="body">
+			<ul class="dash-list">
+				<li>
+				<a href="<?php echo $Settings->get('cvw_dashboardlinks_url1')->settingValue(); ?>">
+				<?php echo $Settings->get('cvw_dashboardlinks_linktext1')->settingValue(); ?></a></li>
+				<li>
+				<a href="<?php echo $Settings->get('cvw_dashboardlinks_url2')->settingValue(); ?>">
+				<?php echo $Settings->get('cvw_dashboardlinks_linktext2')->settingValue(); ?></a></li>
+			</ul>
+		</div>
 	</div> 
 </div>
