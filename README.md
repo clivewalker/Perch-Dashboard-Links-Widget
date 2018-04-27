@@ -8,6 +8,8 @@ This is a Perch CMS dashboard widget that displays a list of links. Links are ad
 * Links to other areas of Perch admin, for example, link to a specific region/collection for editing.
 * A link to the developer's website.
 
+Perch 3.0 required.
+
 ### Note: 
 
 This is personal project for me to learn about Perch widgets. 

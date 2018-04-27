@@ -13,6 +13,13 @@
 <div class="dash-content">
 	<header>
 		<h2><?php echo $Lang->get('Dashboard Links'); ?></h2>
+		<?php $link = $HTML->encode(PERCH_LOGINPATH.'/core/settings/#cvw_dashboardlinks'); 
+				echo '<a class="button button-small button-icon icon-left action-info" href="'.$link.'">';
+			?>
+			<div>
+				<span><?php echo $Lang->get('Settings'); ?></span>
+			</div>
+			</a>
 	</header>
 		<div class="body">
 			<ul class="dash-list">
