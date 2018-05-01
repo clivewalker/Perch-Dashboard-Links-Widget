@@ -7,12 +7,13 @@
 	// for later
 	// $url1 = $Settings->get('cvw_dashboardlinks_url1')->settingValue();
 	// $url2 = $Settings->get('cvw_dashboardlinks_url2')->settingValue();
+	// cvw_dashboardlinks_heading
 
 	 ?>
 <div class="widget">
 <div class="dash-content">
 	<header>
-		<h2><?php echo $Lang->get('Dashboard Links'); ?></h2>
+		<h2><?php echo $Settings->get('cvw_dashboardlinks_heading')->settingValue(); ?></h2>
 		<?php $link = $HTML->encode(PERCH_LOGINPATH.'/core/settings/#cvw_dashboardlinks'); 
 				echo '<a class="button button-small button-icon icon-left action-info" href="'.$link.'">';
 			?>
