@@ -10,6 +10,12 @@ This is a Perch CMS dashboard widget that displays a list of links. Links are ad
 
 Perch 3.0 required.
 
+## Instructions
+
+Upload the `cvw_dashboardlinks` folder into `/perch/addons/apps`. Edit Dashboard Links settings in Perch Admin -> Settings. Save and the widget should appear on your dashboard.
+
+Currently, the widget displays three links. I still need to add clean fallbacks if one or more of the links are blank. But, it should still work if a link is blank.
+
 ### Note: 
 
 This is personal project for me to learn about Perch widgets. 
