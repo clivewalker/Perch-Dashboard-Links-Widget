@@ -4,16 +4,19 @@
 	$Lang  = $API->get('Lang');
 	$Settings = $API->get('Settings');
 	
-	// for later
-	// $url1 = $Settings->get('cvw_dashboardlinks_url1')->settingValue();
-	// $url2 = $Settings->get('cvw_dashboardlinks_url2')->settingValue();
-	// cvw_dashboardlinks_heading
+	$url1 = $Settings->get('cvw_dashboardlinks_url1')->settingValue();
+	$url2 = $Settings->get('cvw_dashboardlinks_url2')->settingValue();
+	$url3 = $Settings->get('cvw_dashboardlinks_url3')->settingValue();
+	$linktext1 = $Settings->get('cvw_dashboardlinks_linktext1')->settingValue();
+	$linktext2 = $Settings->get('cvw_dashboardlinks_linktext2')->settingValue();
+	$linktext3 = $Settings->get('cvw_dashboardlinks_linktext3')->settingValue();
+	$dashboardlinksheading = $Settings->get('cvw_dashboardlinks_heading')->settingValue();
 
 	 ?>
 <div class="widget">
 <div class="dash-content">
 	<header>
-		<h2><?php echo $Settings->get('cvw_dashboardlinks_heading')->settingValue(); ?></h2>
+		<h2><?php echo $dashboardlinksheading; ?></h2>
 		<?php $link = $HTML->encode(PERCH_LOGINPATH.'/core/settings/#cvw_dashboardlinks'); 
 				echo '<a class="button button-small button-icon icon-left action-info" href="'.$link.'">';
 			?>
@@ -24,12 +27,9 @@
 	</header>
 		<div class="body">
 			<ul class="dash-list">
-				<li>
-				<a href="<?php echo $Settings->get('cvw_dashboardlinks_url1')->settingValue(); ?>">
-				<?php echo $Settings->get('cvw_dashboardlinks_linktext1')->settingValue(); ?></a></li>
-				<li>
-				<a href="<?php echo $Settings->get('cvw_dashboardlinks_url2')->settingValue(); ?>">
-				<?php echo $Settings->get('cvw_dashboardlinks_linktext2')->settingValue(); ?></a></li>
+				<li><a href="<?php echo $url1; ?>"><?php echo $linktext1; ?></a></li>
+				<li><a href="<?php echo $url2; ?>"><?php echo $linktext2; ?></a></li>
+				<li><a href="<?php echo $url3; ?>"><?php echo $linktext3; ?></a></li>
 			</ul>
 		</div>
 	</div> 

@@ -1,6 +1,6 @@
 # cvw_dashboardlinks
 
-This is a Perch CMS dashboard widget that displays a list of links. Links are added by an admin user in the Perch Settings page. Possible uses include:
+This is a Perch CMS dashboard widget that displays a list of links. Links are added by a user in the Perch Settings page. Possible uses include:
 
 * A list of links to custom Perch help pages.
 * Link to Google Analytics accounts.
