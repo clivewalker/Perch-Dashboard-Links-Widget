@@ -14,8 +14,9 @@ Perch 3.0 required.
 
 Upload the `cvw_dashboardlinks` folder into `/perch/addons/apps`. Edit Dashboard Links settings in Perch Admin -> Settings. Save and the widget should appear on your dashboard.
 
-Currently, the widget displays three links. I still need to add clean fallbacks if one or more of the links are blank. But, it should still work if a link is blank.
+Currently, the widget can display up to three links. The second and third links can be left blank if you want.
 
 ### Note: 
 
-This is personal project for me to learn about Perch widgets. 
+* This is personal project for me to learn about Perch widgets.
+* Perch dashboard widgets are re-ordered via drag and drop although there is a bug with some versions of Perch where this functioanlity is broken. Perch themselves know about this.
