@@ -28,8 +28,12 @@
 		<div class="body">
 			<ul class="dash-list">
 				<li><a href="<?php echo $url1; ?>"><?php echo $linktext1; ?></a></li>
-				<li><a href="<?php echo $url2; ?>"><?php echo $linktext2; ?></a></li>
-				<li><a href="<?php echo $url3; ?>"><?php echo $linktext3; ?></a></li>
+				<?php if (!empty($url2)) {
+					echo '<li><a href="'. $url2 .'">'. $linktext2 .'</a></li>';
+				} ?>
+				<?php if (!empty($url3)) {
+					echo '<li><a href="'. $url3 .'">'. $linktext3 .'</a></li>';
+				} ?>
 			</ul>
 		</div>
 	</div> 
