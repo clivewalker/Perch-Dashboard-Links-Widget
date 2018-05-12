@@ -16,7 +16,14 @@
 <div class="widget">
 <div class="dash-content">
 	<header>
-		<h2><?php echo $dashboardlinksheading; ?></h2>
+		<h2><?php 
+				if (!empty($dashboardlinksheading)) {
+					echo $dashboardlinksheading; 
+				}
+				else {
+					echo $Lang->get('Dashboard Links');
+				}	?></h2>
+				
 		<?php $link = $HTML->encode(PERCH_LOGINPATH.'/core/settings/#cvw_dashboardlinks'); 
 				echo '<a class="button button-small button-icon icon-left action-info" href="'.$link.'">';
 			?>

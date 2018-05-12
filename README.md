@@ -18,5 +18,5 @@ Currently, the widget can display up to three links. The second and third links 
 
 ### Note: 
 
-* This is personal project for me to learn about Perch widgets.
+* This is a personal project for me to learn about Perch widgets.
 * Perch dashboard widgets are re-ordered via drag and drop although there is a bug with some versions of Perch where this functionality is broken. Perch themselves know about this.
