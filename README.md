@@ -16,6 +16,8 @@ Upload the `cvw_dashboardlinks` folder into `/perch/addons/apps`. Edit Dashboard
 
 Currently, the widget can display up to three links. The second and third links can be left blank if you want.
 
+![screenshot](/screenshot.png?raw=true "Screenshot of the widget on the dashboard")
+
 ### Note: 
 
 * This is a personal project for me to learn about Perch widgets.
